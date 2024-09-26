@@ -1,0 +1,109 @@
+<!DOCTYPE html> <!--コードタイプ設定-->
+<html lang="ja"> <!--言語設定-->
+
+<head>
+  <meta charset="UTF-8"> <!--UTF-8設定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--サイズ設定-->
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="ふじみスポーツクラブの管理ツールです">
+  <title id="title-link">ふじみスポーツクラブ ｜ sportsmanager's</title>
+  <link rel="icon" href="image.jpg"> <!--タイトル設定 -->
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PPCJDH8FP4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-PPCJDH8FP4');
+</script>
+
+<body>
+  <link href="login.css" rel="stylesheet" />
+  <div id="login-container" class="login-container">
+    <h1>ログイン</h1>
+    <form id="form1">
+      <div class="form-group">
+        <label for="password" id="psmode" class="passwordmode">パスワード</label>
+        <label for="password" id="addps" class="nonemode">パスワードの追加</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div>
+        <button type="button" onclick="check()">ログイン</button>
+        <button type="button" onclick="addps()">パスワードの追加</button>
+      </div>
+    </form>
+  </div>
+
+
+
+  <section id="classclass" class="allfilehidden">
+    <!-- <div id="title4" class="topmemustyles">
+      <img class="memu-logo" src="image.jpg" alt="logo2">
+      <h2 class="title3">ふじみスポーツクラブ sportsmanager</h4>
+    </div> -->
+
+    <!-- <header>
+      <div class="header-area">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <ul class="slide-menu">
+        <li><a class="btn_hover2" class="memulist-1-text" href="#title4">title</a></li>
+        <li>メニュー2</li>
+        <li>メニュー3</li>
+        <li>メニュー4</li>
+      </ul>
+    </header> -->
+
+    </div>
+    <article>
+      <section>
+        <div class="tab">
+          <ul class="tab__menu">
+            <li class="tab__menu-item is-active" data-tab="01">会員メニュー カレンダー</li>
+            <li class="tab__menu-item" data-tab="02">新スポーツ登録</li>
+            <li class="tab__menu-item" data-tab="03">活動内容</li>
+            <li class="tab__menu-item" data-tab="04">test1</li>
+          </ul>
+          <div class="tab__panel">
+            <div class="tab__panel-box tab__panel-box001 is-show" data-panel="01">
+              <div id="main-club-memu" class="main-club-memu">
+                <h4>カレンダー</h4>
+                <iframe src="https://calendar.google.com/calendar/embed?src=fujimi.sportsclub%40gmail.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+              </div>
+            </div>
+            <div class="tab__panel-box tab__panel-box002" data-panel="02">
+              <p class="tab__panel-text">申し込み機能は作成中です!!少々お待ちください。</p>
+              <a href="https://www.fujimi-sportsclub.com/%E5%85%A5%E4%BC%9A%E7%94%B3%E8%BE%BC/"><p>仮（ホームページ）申し込みサイト</p></a>
+            </div>
+            <div class="tab__panel-box tab__panel-box003" data-panel="03">
+              <div id="sportslist" class="sportslist">
+                <h2 class="sportslisttitle">活動内容</h2>
+                <p>・テニス</p>
+                <p>・バドミントン</p>
+                <p>・コーディネーショントレーニング</p>
+                <p>・バスケットボール</p>
+              </div>
+            </div>
+            <div class="tab__panel-box tab__panel-box004" data-panel="04">
+              <p class="tab__panel-text">tests</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <p class="copyright">© Fujimi Sports Club 2021 shuukiweb.int</p>
+        <a href="https://www.fujimi-sportsclub.com/"><p>ふじみスポーツクラブ本サイト</p></a>
+      </section>
+    </article>
+    <script src="script.js"></script>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,428 @@
+@charset "utf-8";
+/* utf-8設定 */
+
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  color: #ce38bf;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 5px;
+  color: #8e44ad;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nonemode {
+  display: none;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+
+.allfilehidden {
+  display: none;
+}
+
+.sportslist-animation-mode {
+  animation: fadeIn 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+body {
+  all: unset;
+  background: linear-gradient(45deg, #8e44ad, #3498db);
+  display: flex;
+  flex-direction: column;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  margin-top: 100px;
+  padding-top: 100px;
+}
+
+.login-container1 {
+  display: none;
+}
+
+.top-memu-styles-one {
+  display: flex;
+  /* border: 1px solid black; */
+  background-color: rgb(0, 255, 94);
+  border-radius: 20px;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  flex-direction: row;
+  margin-bottom: 20px;
+  /* padding-left: 60px; */
+  padding-right: 60px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+
+body {
+  overflow-x: hidden;
+  margin-left: 0;
+  margin-top: 151px;
+}
+
+.header-area {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.hamburger {
+  width: 40px;
+  height: 25px;
+  margin-top: 150px;
+  position: fixed;
+  transition: .5s;
+  /* 追記 */
+}
+
+.hamburger span {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: blue;
+  transition: .5s;
+  /* 追記 */
+}
+
+.hamburger span:first-of-type {
+  /* ハンバーガーメニューの1番目の線 */
+  top: 0;
+}
+
+.hamburger span:nth-of-type(2) {
+  /* ハンバーガーメニューの2番目の線 */
+  top: 50%;
+}
+
+.hamburger span:last-of-type {
+  /* ハンバーガーメニューの3番目の線 */
+  top: 100%;
+}
+
+.slide-menu {
+  background-color: rgba(0, 0, 0, .8);
+  position: fixed;
+  top: 65px;
+  width: 100%;
+  left: 0;
+  transform: translateX(100%);
+  transition: .5s;
+  /* 追記 */
+}
+
+.slide-menu li {
+  color: #fff;
+  line-height: 400%;
+  text-align: center;
+}
+
+.hamburger.active {
+  /* 追記 */
+  transform: rotateY(360deg);
+  /* 追記 */
+}
+
+.hamburger.active span:first-of-type {
+  /* ハンバーガーメニューの1番目の線 */
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-of-type(2) {
+  /* ハンバーガーメニューの2番目の線 */
+  opacity: 0;
+  /* 透明にする */
+}
+
+.hamburger.active span:last-of-type {
+  /* ハンバーガーメニューの3番目の線 */
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+.slide-menu.active {
+  transform: translateX(0);
+}
+
+.topmemustyles {
+  display: flex;
+  /* border: 1px solid black; */
+  background-color: rgb(0, 255, 94);
+  border-radius: 20px;
+  margin-left: 70px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  flex-direction: row;
+  margin-bottom: 20px;
+  position: fixed;
+  /* padding-left: 60px; */
+  padding-right: 60px;
+  height: 90px;
+
+}
+
+.memulist-1-text {
+  all: unset;
+  color: aqua;
+}
+
+/* 何もしていない時の背景 */
+.btn_hover2 {
+  color: #ee6354;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* マウスオーバーした際の背景 */
+.btn_hover:hover2 {
+  color: #37beb0;
+}
+
+.memu-logo {
+  padding: 5px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.title3 {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+article {
+  display: flex;
+}
+
+.right-link-style {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  width: 200px;
+  padding-left: 20px;
+  padding-top: 5px;
+  background-color: white;
+  position: fixed;
+  margin-left: 1300px;
+  margin-top: 200px;
+}
+
+.UPiconsstyle {
+  height: 40px;
+  width: 40px;
+}
+
+.memu-logo-text {
+  padding-top: 25px;
+  padding-left: 20px;
+  color: black;
+}
+
+section {
+  margin-top: 20px;
+  margin-bottom: 200px;
+  border-radius: 10px;
+  width: 1250px;
+  margin-left: 20px;
+}
+
+.tab {
+  max-width: 800px;
+  margin-top: 120px;
+  color: black;
+}
+
+/* タブメニュー */
+.tab__menu {
+  display: flex;
+  align-items: flex-end;
+  /* メニューを下揃え&高さを調整 */
+  justify-content: center;
+  min-height: 50px;
+  /* メニュー切替時にタブがズレないように */
+  padding: 0;
+  margin: 0;
+}
+
+.tab__menu-item {
+  list-style: none;
+  width: 200px;
+  padding: 8px 5px;
+  /* メニューに高さを付ける */
+  text-align: center;
+  margin-right: 6px;
+  background-color: #cdcdcd;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  transition: all .3s;
+  /* アニメーション */
+}
+
+.tab__menu-item:last-of-type {
+  margin-right: 0px;
+}
+
+/* is-activeがついている時のスタイル */
+.tab__menu-item.is-active {
+  background-color: rgba(48, 172, 249);
+  color: #ffffff;
+  padding: 12px 5px;
+}
+
+/* タブパネル */
+.tab__panel {
+  width: 100%;
+}
+
+.tab__panel-box {
+  min-height: 400px;
+  /* テキスト量が多くなっても対応できるように */
+  padding: 10px 30px;
+  border-radius: 10px;
+  width: 1000px;
+}
+
+.tab__panel-box001 {
+  background-color: rgb(205, 246, 246);
+  display: none;
+}
+
+.tab__panel-box002 {
+  background-color: rgb(249 227 243);
+  display: none;
+}
+
+.tab__panel-box003 {
+  background-color: rgb(200, 248, 195);
+  display: none;
+}
+
+.tab__panel-box004 {
+  background-color: rgb(200, 248, 195);
+  display: none;
+}
+
+/* is-showがついている時のスタイル */
+.tab__panel-box.is-show {
+  display: block;
+}
+
+.logo {
+  text-align: center;
+  border-radius: 50%;
+}
+
+.title {
+  color: black;
+  text-align: center;
+  padding-top: 20px;
+  border-bottom: 1px solid red;
+  padding-bottom: 20px;
+}
+
+.subtitle {
+  text-align: center;
+  color: lightcoral;
+  padding-top: 20px;
+
+}
+
+.main-club-memu {
+  padding-left: 15px;
+  animation: fadeIn 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+.main-club-memu-title {
+  color: red;
+}
+
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+  padding: 10px;
+}
+
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+a.btn--radius {
+  border-radius: 100vh;
+}
+
+.NEWStitletext {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.sportslist {
+  padding-left: 30px;
+  padding-top: 50px;
+}
+
+.sportslisttitle {
+  border-bottom: 1px solid black;
+}
+
+.copyright {
+  padding-left: 30px;
+  color: black;
+}
