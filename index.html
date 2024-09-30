@@ -10,6 +10,8 @@
   <link rel="icon" href="image.jpg"> <!--タイトル設定 -->
 </head>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.12/push.script.js"></script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPCJDH8FP4"></script>
 <script>
@@ -21,88 +23,139 @@
 </script>
 
 <body>
-  <link href="login.css" rel="stylesheet" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/0.0.11/push.min.js"></script>
+
+
+  <script>
+    function pushcode1(){
+      Push.create('更新情報');
+    }
+  </script>
+
+  <video preload="none" src="video.mp4"></video>
+  <link href="login.css" rel="stylesheet">
+  <h1
+    style="margin-top: 100px; background: linear-gradient(45deg, #e90f87, #3498db); border-radius: 5px; padding-top: 3px; padding-bottom: 3px; padding-left: 3px;">
+    ふじみスポーツクラブ 会員アプリ</h1>
   <div id="login-container" class="login-container">
     <h1>ログイン</h1>
     <form id="form1">
+      <label for="mail" id="psmode1" class="mail">mail</label>
+      <input style="padding-top: 5px;" class="input" type="text" id="mail" name="mail" required>
+
       <div class="form-group">
         <label for="password" id="psmode" class="passwordmode">パスワード</label>
-        <label for="password" id="addps" class="nonemode">パスワードの追加</label>
-        <input type="password" id="password" name="password" required>
+        <input style="padding-top: 5px;" class="input" type="password" id="password" name="password" required>
       </div>
       <div>
-        <button type="button" onclick="check()">ログイン</button>
-        <button type="button" onclick="addps()">パスワードの追加</button>
+        <button class="button" type="button" onclick="check()">ログイン</button>
+        <button class="button" type="button" onclick="addps()">mail&パスワードの追加</button>
       </div>
     </form>
   </div>
 
+  <div id="loader-off" class="loader-off">Loading...</div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.2/dist/confetti.browser.min.js">
+  </script>
+
 
 
   <section id="classclass" class="allfilehidden">
-    <!-- <div id="title4" class="topmemustyles">
-      <img class="memu-logo" src="image.jpg" alt="logo2">
-      <h2 class="title3">ふじみスポーツクラブ sportsmanager</h4>
-    </div> -->
+    <h1
+      style="margin-top: 450px; background: linear-gradient(45deg, #e90f87, #3498db); text-align: center; border-radius: 5px; padding-top: 3px; padding-bottom: 3px; padding-left: 3px;">
+      ふじみスポーツクラブ 会員アプリ
+    </h1>
 
-    <!-- <header>
-      <div class="header-area">
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <ul class="slide-menu">
-        <li><a class="btn_hover2" class="memulist-1-text" href="#title4">title</a></li>
-        <li>メニュー2</li>
-        <li>メニュー3</li>
-        <li>メニュー4</li>
-      </ul>
-    </header> -->
 
-    </div>
     <article>
       <section>
-        <div class="tab">
-          <ul class="tab__menu">
-            <li class="tab__menu-item is-active" data-tab="01">会員メニュー カレンダー</li>
-            <li class="tab__menu-item" data-tab="02">新スポーツ登録</li>
-            <li class="tab__menu-item" data-tab="03">活動内容</li>
-            <li class="tab__menu-item" data-tab="04">test1</li>
-          </ul>
-          <div class="tab__panel">
-            <div class="tab__panel-box tab__panel-box001 is-show" data-panel="01">
-              <div id="main-club-memu" class="main-club-memu">
-                <h4>カレンダー</h4>
-                <iframe src="https://calendar.google.com/calendar/embed?src=fujimi.sportsclub%40gmail.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
-              </div>
-            </div>
-            <div class="tab__panel-box tab__panel-box002" data-panel="02">
-              <p class="tab__panel-text">申し込み機能は作成中です!!少々お待ちください。</p>
-              <a href="https://www.fujimi-sportsclub.com/%E5%85%A5%E4%BC%9A%E7%94%B3%E8%BE%BC/"><p>仮（ホームページ）申し込みサイト</p></a>
-            </div>
-            <div class="tab__panel-box tab__panel-box003" data-panel="03">
-              <div id="sportslist" class="sportslist">
-                <h2 class="sportslisttitle">活動内容</h2>
-                <p>・テニス</p>
-                <p>・バドミントン</p>
-                <p>・コーディネーショントレーニング</p>
-                <p>・バスケットボール</p>
-              </div>
-            </div>
-            <div class="tab__panel-box tab__panel-box004" data-panel="04">
-              <p class="tab__panel-text">tests</p>
-            </div>
+        <div class="news1">
+          <script type="text/javascript">
+            Push.create('Push 通知だよ！');
+        </script>
+
+          <h2>NEWS</h2>
+          <p>2024.9.19　会員数が290名に到達！</p>
+          <p>2024.3.27　2024年度からの新規入会の方はお手続きください</p>
+          <p>2024.3.27　バドミントン初心者クラスは大人向けのスキルアップクラスへと変更となります！</p>
+          <p>2024.3.19　2024年度から家族会員2人目から、年会費が割引となる家族割がスタートすることになりました！</p>
+        </div>
+
+        <div class="appiconslist">
+          <div class="appicon1">
+            <p style="cursor:pointer" onclick="calendarpage()">calendar</p>
           </div>
+          <div style="cursor:pointer" class="appicon2" onclick="console.log('OK')">
+            <p>支払い</p>
+          </div>
+          <!-- <div class="appicon3" onclick="console.log('OK')">
+              <p>カレンダー</p>
+            </div>
+            <div class="appicon4" onclick="console.log('OK')">
+              <p>カレンダー</p>
+            </div>
+            <div class="appicon5" onclick="console.log('OK')">
+              <p>カレンダー</p>
+            </div>
+            <div class="appicon6" onclick="console.log('OK')">
+              <p>カレンダー</p>
+            </div>
+            <div class="appicon7" onclick="console.log('OK')">
+              <p>カレンダー</p>
+            </div>
+            <div class="appicon8" onclick="console.log('OK')">
+              <p>カレンダー</p>
+            </div>
+            <div class="appicon9" onclick="console.log('OK')">
+              <p>カレンダー</p>
+            </div> -->
         </div>
-        </div>
+
         <p class="copyright">© Fujimi Sports Club 2021 shuukiweb.int</p>
-        <a href="https://www.fujimi-sportsclub.com/"><p>ふじみスポーツクラブ本サイト</p></a>
+        <a href="https://www.fujimi-sportsclub.com/">
+          <p>ふじみスポーツクラブ本サイト</p>
+        </a>
       </section>
     </article>
+    </div>
+
+    <div class="calendarpageon" id="calendarpage">
+      <div class="backsbutton">
+        <p style="cursor:pointer" onclick="scrollToTop()">戻る</p>
+      </div>
+      <h1 class="calendartitle">calendar</h1>
+      <iframe src="https://calendar.google.com/calendar/embed?src=fujimi.sportsclub%40gmail.com&ctz=Asia%2FTokyo"
+        style="border: 0; padding-bottom: 20px;" width="1000" height="400" frameborder="0" scrolling="ok">
+      </iframe>
+    </div>
     <script src="script.js"></script>
+  </section>
+  <section id="operatormenu" class="operatormenu-off">
+    <p>これはふじみスポーツクラブのオペレータシステムです</p>
+    <h1 class="calendartitle">calendar</h1>
+    <iframe src="https://calendar.google.com/calendar/embed?src=fujimi.sportsclub%40gmail.com&ctz=Asia%2FTokyo"
+      style="border: 0; padding-bottom: 20px;" width="1000" height="400" frameborder="0" scrolling="ok">
+    </iframe>
+
+    <h2>天気予報(富士見市)</h2>
+    <div id="location"><a href="https://www.jma.go.jp/bosai/forecast/" target="_blank">気象庁のデータを元に作成</a></div>
+<div class="weatherForecast" style="margin-bottom: 100px;">
+  <div class="weather">
+    <div class="date">--/--(-)</div>
+    <img class="weatherImg">
+    <div class="weatherTelop">--</div>
+    <div><span class="tempMin">-℃</span>/<span class="tempMax">-℃</span></div>
+  </div>
+</div>
+<script>
+  for (let i = 0; i < 6; i++) {
+    const el = document.querySelector('.weather').cloneNode(true);
+    document.querySelector('.weatherForecast').appendChild(el);
+  }
+</script>
   </section>
 </body>
 

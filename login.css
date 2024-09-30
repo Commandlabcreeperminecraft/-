@@ -1,11 +1,7 @@
 body {
-  background: linear-gradient(45deg, #8e44ad, #3498db);
-  font-family: 'Helvetica Neue', sans-serif;
   color: #fff;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .login-container {
@@ -19,7 +15,7 @@ body {
   margin-bottom: 20px;
 }
 
-input {
+.input {
   width: 100%;
   padding: 15px;
   border: none;
@@ -29,7 +25,7 @@ input {
   font-size: 16px;
 }
 
-input::placeholder {
+.input::placeholder {
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -38,7 +34,7 @@ input:focus {
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
-button {
+.button {
   width: 100%;
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -51,6 +47,6 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+.button:hover {
   background-color: rgba(255, 255, 255, 1);
 }
