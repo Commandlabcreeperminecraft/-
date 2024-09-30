@@ -3,17 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@media screen and (min-width: 481px)  { 
+@media screen and (min-width: 376px)  { /* PC */
   .nonemode {
     display: none;
   }
@@ -74,88 +64,6 @@
     border-radius: 10px;
     width: 1250px;
     margin-left: 20px;
-  }
-  
-  .tab {
-    max-width: 800px;
-    margin-top: 120px;
-    color: black;
-  }
-  
-  /* タブメニュー */
-  .tab__menu {
-    display: flex;
-    align-items: flex-end;
-    /* メニューを下揃え&高さを調整 */
-    justify-content: center;
-    min-height: 50px;
-    /* メニュー切替時にタブがズレないように */
-    padding: 0;
-    margin: 0;
-  }
-  
-  .tab__menu-item {
-    list-style: none;
-    width: 200px;
-    padding: 8px 5px;
-    /* メニューに高さを付ける */
-    text-align: center;
-    margin-right: 6px;
-    background-color: #cdcdcd;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    cursor: pointer;
-    transition: all .3s;
-    /* アニメーション */
-  }
-  
-  .tab__menu-item:last-of-type {
-    margin-right: 0px;
-  }
-  
-  /* is-activeがついている時のスタイル */
-  .tab__menu-item.is-active {
-    background-color: rgba(48, 172, 249);
-    color: #ffffff;
-    padding: 12px 5px;
-  }
-  
-  /* タブパネル */
-  .tab__panel {
-    width: 100%;
-  }
-  
-  .tab__panel-box {
-    min-height: 400px;
-    /* テキスト量が多くなっても対応できるように */
-    padding: 10px 30px;
-    border-radius: 10px;
-    width: 1000px;
-  }
-  
-  .tab__panel-box001 {
-    background-color: rgb(205, 246, 246);
-    display: none;
-  }
-  
-  .tab__panel-box002 {
-    background-color: rgb(249 227 243);
-    display: none;
-  }
-  
-  .tab__panel-box003 {
-    background-color: rgb(200, 248, 195);
-    display: none;
-  }
-  
-  .tab__panel-box004 {
-    background-color: rgb(200, 248, 195);
-    display: none;
-  }
-  
-  /* is-showがついている時のスタイル */
-  .tab__panel-box.is-show {
-    display: block;
   }
   
   .logo {
@@ -525,7 +433,7 @@
 }
 
 
-@media screen and (max-width: 480px)  { 
+@media screen and (max-width: 375px)  { /* スマホ */
   .nonemode {
     display: none;
   }
@@ -534,12 +442,8 @@
     display: none;
   }
   
-  .sportslist-animation-mode {
-    animation: fadeIn 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-  }
-  
   body {
-    background: linear-gradient(45deg, #8e44ad, #3498db);
+    background: linear-gradient(45deg, #8e44ad, #666);
     display: flex;
     flex-direction: column;
     font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -551,11 +455,6 @@
   
   .login-container1 {
     display: none;
-  }
-  
-  .memulist-1-text {
-    all: unset;
-    color: aqua;
   }
   
   .memu-logo {
