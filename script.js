@@ -126,14 +126,14 @@ const url = "https://www.jma.go.jp/bosai/forecast/data/forecast/110000.json";   
 const dayList = ["日", "月", "火", "水", "木", "金", "土"];
 
 function push(){
-  Push.create("エムトラッドブログを更新しました！", { //タイトル
-      body: "10分で出来る簡単プッシュ通知の方法", //内容
+  Push.create("test!!", { //タイトル
+      body: "test", //内容
       // icon: img/mtrad_logo.jpg, //ロゴ等の画像
       timeout: 6000, // 通知が消えるタイミング
       vibrate: [100, 100, 100], // モバイル端末でのバイブレーション秒数
       onClick: function() {
           // 通知がクリックされた場合の設定
-  window.open("https://mtrad-blog.com/wp/", "_blank"); //URLリンク先
+  window.open("https://commandlabcreeperminecraft.github.io/-/", "_blank"); //URLリンク先
           console.log(this);
   
       }
@@ -228,6 +228,14 @@ function scrollToTop() {
   preventScroll.enable();	
 }
 
+function headerMenuFunc() {
+  document.addEventListener('touchmove', handleTouchMove, { passive: false });
+}
+
+function handleTouchMove(e) {
+  e.preventDefault();
+}
+
 function calendarpage() {
   preventScroll.disable();
   scrollTo(0, 740);
@@ -250,6 +258,7 @@ function psOKsystem() {
     scrollToTop()
     await sleep(1000)
     preventScroll.enable();	
+    headerMenuFunc()
   }
   hogehoge()
   preventScroll.enable();	
