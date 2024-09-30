@@ -8,6 +8,7 @@
   <meta name="description" content="ふじみスポーツクラブの管理ツールです">
   <title id="title-link">ふじみスポーツクラブ ｜ sportsmanager's</title>
   <link rel="icon" href="image.jpg"> <!--タイトル設定 -->
+  <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
 </head>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.12/push.script.js"></script>
@@ -28,7 +29,7 @@
 
 
   <script>
-    function pushcode1(){
+    function pushcode1() {
       Push.create('更新情報');
     }
   </script>
@@ -71,12 +72,10 @@
 
     <article>
       <section>
-
-        <div class="news1">
-          <script type="text/javascript">
-            Push.create('Push 通知だよ！');
+        <script type="text/javascript">
+          Push.create('Push 通知だよ！');
         </script>
-
+        <div class="news1">
           <h2>NEWS</h2>
           <p>2024.9.19　会員数が290名に到達！</p>
           <p>2024.3.27　2024年度からの新規入会の方はお手続きください</p>
@@ -142,20 +141,20 @@
 
     <h2>天気予報(富士見市)</h2>
     <div id="location"><a href="https://www.jma.go.jp/bosai/forecast/" target="_blank">気象庁のデータを元に作成</a></div>
-<div class="weatherForecast" style="margin-bottom: 100px;">
-  <div class="weather">
-    <div class="date">--/--(-)</div>
-    <img class="weatherImg">
-    <div class="weatherTelop">--</div>
-    <div><span class="tempMin">-℃</span>/<span class="tempMax">-℃</span></div>
-  </div>
-</div>
-<script>
-  for (let i = 0; i < 6; i++) {
-    const el = document.querySelector('.weather').cloneNode(true);
-    document.querySelector('.weatherForecast').appendChild(el);
-  }
-</script>
+    <div class="weatherForecast" style="margin-bottom: 100px;">
+      <div class="weather">
+        <div class="date">--/--(-)</div>
+        <img class="weatherImg">
+        <div class="weatherTelop">--</div>
+        <div><span class="tempMin">-℃</span>/<span class="tempMax">-℃</span></div>
+      </div>
+    </div>
+    <script>
+      for (let i = 0; i < 6; i++) {
+        const el = document.querySelector('.weather').cloneNode(true);
+        document.querySelector('.weatherForecast').appendChild(el);
+      }
+    </script>
   </section>
 </body>
 
