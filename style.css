@@ -646,7 +646,8 @@
     padding-top: 10px;
     border: 2px rebeccapurple solid;
     border-radius: 10px;
-    overflow-wrap: break-word;
+    display: inline-block;
+    text-align: center;
   }
   
   .form2 {
