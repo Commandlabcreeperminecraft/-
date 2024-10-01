@@ -3,13 +3,18 @@
 
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
 
-@media screen and (min-width: 376px)  { /* PC */
   .nonemode {
     display: none;
   }
   
   .allfilehidden {
     display: none;
+  }
+
+  
+  .calendar {
+    width: 100%;
+    height: 100%;
   }
   
   .sportslist-animation-mode {
@@ -430,7 +435,7 @@
   }
   
   
-}
+
 
 
 @media screen and (max-width: 375px)  { /* スマホ */
@@ -455,6 +460,11 @@
   
   .login-container1 {
     display: none;
+  }
+
+  .calendar {
+    width: 100%;
+    height: 100%;
   }
   
   .memu-logo {

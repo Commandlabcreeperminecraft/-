@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="UTF-8"> <!--UTF-8設定 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--サイズ設定-->
   <link rel="stylesheet" href="style.css">
   <meta name="description" content="ふじみスポーツクラブの管理ツールです">
   <title id="title-link">ふじみスポーツクラブ ｜ sportsmanager's</title>
   <link rel="icon" href="image.jpg"> <!--タイトル設定 -->
-  <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.12/push.script.js"></script>
@@ -69,7 +69,9 @@
       ふじみスポーツクラブ
     </h1>
 
-    <h1 style="background: linear-gradient(45deg, #e90f87, #3498db); text-align: center; border-radius: 5px; padding-bottom: 3px; padding-left: 3px;">会員アプリ</h1>
+    <h1
+      style="background: linear-gradient(45deg, #e90f87, #3498db); text-align: center; border-radius: 5px; padding-bottom: 3px; padding-left: 3px;">
+      会員アプリ</h1>
 
 
     <article>
@@ -86,26 +88,8 @@
             <p>支払い</p>
           </div>
           <!-- <div class="appicon3" onclick="console.log('OK')">
-              <p>カレンダー</p>
-            </div>
-            <div class="appicon4" onclick="console.log('OK')">
-              <p>カレンダー</p>
-            </div>
-            <div class="appicon5" onclick="console.log('OK')">
-              <p>カレンダー</p>
-            </div>
-            <div class="appicon6" onclick="console.log('OK')">
-              <p>カレンダー</p>
-            </div>
-            <div class="appicon7" onclick="console.log('OK')">
-              <p>カレンダー</p>
-            </div>
-            <div class="appicon8" onclick="console.log('OK')">
-              <p>カレンダー</p>
-            </div>
-            <div class="appicon9" onclick="console.log('OK')">
-              <p>カレンダー</p>
-            </div> -->
+                 <p>カレンダー</p>
+               </div> -->
         </div>
 
         <p class="copyright">© Fujimi Sports Club 2021 shuukiweb.int</p>
@@ -118,12 +102,10 @@
 
     <div class="calendarpageon" id="calendarpage">
       <div class="backsbutton">
-        <p style="cursor:pointer" onclick="scrollToTop()">戻る</p>
+        <p style="cursor:pointer; text-align: center;" onclick="scrollToTop()">戻る</p>
       </div>
-      <h1 class="calendartitle">calendar</h1>
-      <iframe src="https://calendar.google.com/calendar/embed?src=fujimi.sportsclub%40gmail.com&ctz=Asia%2FTokyo"
-        style="border: 0; padding-bottom: 20px;" width="1000" height="400" frameborder="0" scrolling="ok">
-      </iframe>
+      <h1 class="calendartitle" style="text-align: center;">calendar</h1>
+      <div class="calendar" style="text-align: center;"><iframe src="https://calendar.google.com/calendar/embed?src=fujimi.sportsclub%40gmail.com&ctz=Asia%2FTokyo" style="border: 0; text-align: center;" width="800" height="600" frameborder="0" scrolling="no" ></iframe></div>
     </div>
     <script src="script.js"></script>
   </section>
@@ -131,9 +113,11 @@
     <p>これはふじみスポーツクラブのオペレータシステムです</p>
     <h1 class="calendartitle">calendar</h1>
     <iframe src="https://calendar.google.com/calendar/embed?src=fujimi.sportsclub%40gmail.com&ctz=Asia%2FTokyo"
-      style="border: 0; padding-bottom: 20px;" width="1000" height="400" frameborder="0" scrolling="ok">
+      style="border: 0; padding-bottom: 20px;" frameborder="0">
     </iframe>
+    <!-- https://www.youtube.com/channel/UCMCcxMV6Jrqd78jttzrD0Mw -->
 
+    <iframe src="https://www.youtube.com/channel/UCMCcxMV6Jrqd78jttzrD0Mw" style="border: 0; padding-bottom: 20px;" frameborder="0"></iframe> 
     <h2>天気予報(富士見市)</h2>
     <div id="location"><a href="https://www.jma.go.jp/bosai/forecast/" target="_blank">気象庁のデータを元に作成</a></div>
     <div class="weatherForecast" style="margin-bottom: 100px;">
