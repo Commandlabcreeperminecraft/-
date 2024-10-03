@@ -48,6 +48,22 @@ closebutton1.addEventListener('click', () => {
 });
 
 
+boardbutton.addEventListener(`click`, () => {
+  console.log("検出!!")
+  const mask2 = document.getElementById(`mask`)
+  const home2 = document.getElementById(`boardhome`)
+  home2.classList.remove('hidden');
+  mask2.classList.remove('hidden');
+});
+
+closebutton2.addEventListener('click', () => {
+  const mask2 = document.getElementById(`mask`)
+  const home2 = document.getElementById(`boardhome`)
+  home2.classList.add('hidden');
+  mask2.classList.add('hidden');
+});
+
+
 function doReload() {
 
   // reloadメソッドによりページをリロード
