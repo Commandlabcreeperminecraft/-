@@ -158,6 +158,10 @@ button:hover {
   text-align: center;
   padding: 12px 0;
   margin: 16px auto 0;
+  transition-property: color;
+transition-duration: 1s;
+transition-property: background-color;
+transition-duration: 1s;
 }
 
 #boardhome {
@@ -187,6 +191,29 @@ border-radius: 4px;
 text-align: center;
 padding: 12px 0;
 margin: 16px auto 0;
+transition-property: color;
+transition-duration: 1s;
+transition-property: background-color;
+transition-duration: 1s;
+}
+
+#closebutton1:hover {
+  color: white;
+  background-color: #046a39;
+  
+}
+
+#closebutton2:hover {
+  color: white;
+  background-color: #046a39;
+  
+}
+
+#closebutton3:hover {
+  color: white;
+  background-color: #046a39;
+
+  
 }
 
 #moneyhome {
@@ -216,6 +243,10 @@ border-radius: 4px;
 text-align: center;
 padding: 12px 0;
 margin: 16px auto 0;
+transition-property: color;
+transition-duration: 1s;
+transition-property: background-color;
+transition-duration: 1s;
 }
 
 @media (max-width: 600px) {
@@ -290,6 +321,7 @@ margin: 16px auto 0;
   .appiconslist {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
   
   .appicon1 {
@@ -303,6 +335,7 @@ margin: 16px auto 0;
     border-radius: 10px;
     margin-left: 20px;
     padding: 10px 10px 10px 10px;
+    padding-top: 20px;
     background-color: #37beb0;
     margin-top: 20px;
   }
@@ -311,6 +344,7 @@ margin: 16px auto 0;
     border-radius: 10px;
     margin-left: 20px;
     padding: 10px 10px 10px 10px;
+    padding-top: 20px;
     background-color: #37beb0;
     margin-top: 20px;
   }
@@ -512,12 +546,18 @@ margin: 16px auto 0;
 
   .titlemain {
     color: rgb(66, 3, 59);
+    padding-top: 100px;
+    border-bottom: #046a39 1px solid;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
   }
 
   .copyright {
     text-align: left;
     margin-left: 20px;
     color: #046a39;
+    margin-top: 50px;
+    border-top: #046a39 1px solid;
   }
 
 
@@ -744,7 +784,7 @@ margin: 16px auto 0;
     .titlemain {
       color: rgb(66, 3, 59);
       text-align: center;
-      margin-top: 200px;
+      padding-top: 100px;
     }
 
     .calendarhomecalendar {
@@ -847,6 +887,8 @@ margin: 16px auto 0;
   .copyright {
     text-align: center;
     color: #046a39;
+    margin-top: 50px;
+    border-top: #046a39 1px solid;
   }
 
     
