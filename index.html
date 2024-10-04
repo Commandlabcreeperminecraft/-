@@ -12,14 +12,14 @@
 </head>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PPCJDH8FP4"></script>
-<script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPCJDH8FP4"></script>
+  <script>
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-PPCJDH8FP4');
-</script>
+  </script>
 <!-- Google tag (gtag.js) -->
 
 <body>
@@ -56,22 +56,24 @@
 
     <article> <!-- 全体画面 -->
       <section>
-        <div class="appiconslist" style="margin-left: 500px;"> <!-- アプリ一覧 -->
+        <div class="appiconslist"> <!-- アプリ一覧 -->
+
           <div class="appicon1">
-            <p style="cursor:pointer" onclick="calendarpage()" id="calendarbutton">calendar</p> <!-- カレンダーアプリアイコン -->
+            <p style="cursor:pointer" id="calendarbutton" class="appicon1">calendar</p> <!-- カレンダーアプリアイコン -->
           </div>
 
-          <div style="cursor:pointer" class="appicon2" onclick="console.log('OK')"> <!-- 支払いアプリアイコン -->
+          <div style="cursor:pointer" id="moneybutton" class="appicon2"> <!-- 支払いアプリアイコン -->
             <p>支払い</p>
           </div>
 
-          <div style="cursor:pointer" id="boardbutton" class="appicon3" onclick="console.log('OK')"> <!-- 支払いアプリアイコン -->
+          <div style="cursor:pointer" id="boardbutton" class="appicon3"> <!-- 支払いアプリアイコン -->
             <p>掲示板</p>
           </div>
 
         </div>
 
         <p class="copyright">© Fujimi Sports Club 2021 shuukiweb.int</p>
+
         <a href="https://www.fujimi-sportsclub.com/">
           <p>ふじみスポーツクラブ本サイト</p>
         </a>
@@ -90,16 +92,29 @@
       </div>
     </div>
 
+    <div id="moneyhome" class="hidden">
+      <h1>支払い</h1>
+      <img src="moneytest.png" alt="moneytest">
+      <div id="closebutton3">閉じる</div>
+    </div>
+
     <div id="boardhome" class="hidden">
       <div class="container5">
         <h1 class="h1">お知らせ掲示板</h1>
-        
         <div class="posts">
+          <article class="post">
+            <header>
+                <div class="post-info">
+                    <h2>お知らせ</h2>
+                    <p>上杉秋希 - 2024-10-04</p>
+                </div>
+            </header>
+            <div class="post-content">
+                <p>新機能 <br>「支払い beta」<br> ができました！！</p>
+            </div>
+        </article>
             <article class="post">
                 <header>
-                    <div class="avatar">
-                        <img src="https://via.placeholder.com/40" alt="田中太郎のアバター">
-                    </div>
                     <div class="post-info">
                         <h2>お知らせ</h2>
                         <p>上杉秋希 - 2024-10-03</p>
@@ -112,9 +127,6 @@
   
             <article class="post">
                 <header>
-                    <div class="avatar">
-                        <img src="https://via.placeholder.com/40" alt="佐藤花子のアバター">
-                    </div>
                     <div class="post-info">
                         <h2>お知らせ</h2>
                         <p>上杉秋希 - 2024-10-02</p>

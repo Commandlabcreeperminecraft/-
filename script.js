@@ -63,6 +63,21 @@ closebutton2.addEventListener('click', () => {
   mask2.classList.add('hidden');
 });
 
+moneybutton.addEventListener(`click`, () => {
+  console.log("検出!!")
+  const mask3 = document.getElementById(`mask`)
+  const home3 = document.getElementById(`moneyhome`)
+  home3.classList.remove('hidden');
+  mask3.classList.remove('hidden');
+});
+
+closebutton3.addEventListener('click', () => {
+  const mask3 = document.getElementById(`mask`)
+  const home3 = document.getElementById(`moneyhome`)
+  home3.classList.add('hidden');
+  mask3.classList.add('hidden');
+});
+
 
 function doReload() {
 

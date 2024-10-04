@@ -111,6 +111,107 @@ button:hover {
     background-color: #2980b9;
 }
 
+.hidden {
+  display: none;
+}
+
+#mask {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#calendarhome {
+    background: #fff;
+    color: black;
+    width: 1000px;
+    padding: 20px;
+    border-radius: 4px;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: transform 1s;
+    z-index: 2;
+}
+
+#calenderhome.hidden {
+  transform: translate(0, -500px);
+}
+
+#closebutton1 {
+  cursor: pointer;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px 0;
+  margin: 16px auto 0;
+}
+
+#boardhome {
+  background: #fff;
+  color: black;
+  width: 1000px;
+  padding: 20px;
+  border-radius: 4px;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 1s;
+  z-index: 2;
+}
+
+#boardhome.hidden {
+transform: translate(0, -500px);
+}
+
+#closebutton2 {
+cursor: pointer;
+width: 200px;
+border: 1px solid #ccc;
+border-radius: 4px;
+text-align: center;
+padding: 12px 0;
+margin: 16px auto 0;
+}
+
+#moneyhome {
+  background: #fff;
+  color: black;
+  width: 1000px;
+  padding: 20px;
+  border-radius: 4px;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 1s;
+  z-index: 2;
+}
+
+#moneyhome.hidden {
+transform: translate(0, -500px);
+}
+
+#closebutton3 {
+cursor: pointer;
+width: 200px;
+border: 1px solid #ccc;
+border-radius: 4px;
+text-align: center;
+padding: 12px 0;
+margin: 16px auto 0;
+}
+
 @media (max-width: 600px) {
     .container5 {
         padding: 10px;
@@ -187,7 +288,6 @@ button:hover {
   
   .appicon1 {
     border-radius: 10px;
-    margin-left: 20px;
     padding: 10px 10px 10px 10px;
     background-color: #37beb0;
     margin-top: 20px;
@@ -342,7 +442,6 @@ button:hover {
     width: 200px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    text-align: center;
     padding: 12px 0;
     margin: 16px auto 0;
   }
@@ -350,14 +449,14 @@ button:hover {
   #boardhome {
     background: #fff;
     color: black;
-    width: 1000px;
+    width: 90%;
     padding: 20px;
     border-radius: 4px;
     position: absolute;
     top: 200px;
     left: 0;
     right: 0;
-    margin: 0 auto;
+    margin: 0;
     transition: transform 1s;
     z-index: 2;
 }
@@ -376,8 +475,43 @@ button:hover {
   margin: 16px auto 0;
 }
 
+ #moneyhome {
+    background: #fff;
+    color: black;
+    width: 90%;
+    padding: 20px;
+    border-radius: 4px;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: transform 1s;
+    z-index: 2;
+}
+
+#moneyhome.hidden {
+  transform: translate(0, -500px);
+}
+
+#closebutton3 {
+  cursor: pointer;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px 0;
+  margin: 16px auto 0;
+}
+
   .titlemain {
     color: rgb(66, 3, 59);
+  }
+
+  .copyright {
+    text-align: left;
+    margin-left: 20px;
+    color: #046a39;
   }
 
 
@@ -442,7 +576,6 @@ button:hover {
     
     .appicon1 {
       border-radius: 10px;
-      margin-left: 20px;
       padding: 10px 10px 10px 10px;
       background-color: #37beb0;
       margin-top: 20px;
@@ -613,6 +746,102 @@ button:hover {
       height: 500px;
       text-align: left;
     }   
+
+    .container5 {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+  
+  .h1 {
+      text-align: center;
+      color: #2c3e50;
+  }
+  
+  .posts {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+  
+  .post {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+  }
+  
+  .post header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+  
+  .post-info h2 {
+      margin: 0;
+      font-size: 1.2em;
+      color: #2c3e50;
+  }
+  
+  .post-info p {
+      margin: 0;
+      font-size: 0.8em;
+      color: #7f8c8d;
+  }
+  
+  .post-content {
+      margin-bottom: 15px;
+      margin-left: 10px;
+  }
+  
+  .post footer {
+      display: flex;
+      justify-content: flex-start;
+      gap: 10px;
+  }
+  
+  #button {
+      background-color: #ecf0f1;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9em;
+      display: flex;
+      align-items: center;
+      transition: background-color 0.3s;
+  }
+  
+  button:hover {
+      background-color: #bdc3c7;
+  }
+  
+  .icon {
+      margin-right: 5px;
+  }
+  
+  .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 10px;
+  }
+  
+  .pagination button {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+  }
+  
+  .pagination button:hover {
+      background-color: #2980b9;
+  }
+
+  .copyright {
+    text-align: center;
+    color: #046a39;
+  }
 
     
   
