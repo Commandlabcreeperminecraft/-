@@ -18,6 +18,12 @@
     color: #2c3e50;
 }
 
+body {
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
 .posts {
     display: flex;
     flex-direction: column;

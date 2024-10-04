@@ -2,6 +2,7 @@ body {
   color: #fff;
   height: 100vh;
   display: flex;
+  font-family: vgtj-n6, adobe-notdef;
 }
 
 .login-container {
